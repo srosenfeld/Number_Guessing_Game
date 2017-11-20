@@ -1,4 +1,5 @@
 import random
+import time
 
 #Initializes the random integer to be guessed
 answer = random.randint(1,50)
@@ -24,4 +25,5 @@ while guess != answer:
         counter += 1
         print("You guessed my number! Congratulations!")
         print("You tried " + str(counter) + " guesses.")
+        time.sleep(10)
         break
